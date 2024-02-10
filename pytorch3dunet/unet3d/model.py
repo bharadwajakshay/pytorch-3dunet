@@ -134,6 +134,7 @@ class UNet3D(AbstractUNet):
                                      conv_upscale=conv_upscale,
                                      upsample=upsample,
                                      dropout_prob=dropout_prob,
+                                     pool_kernel_size=2,
                                      is3d=True)
 
 
@@ -161,6 +162,7 @@ class ResidualUNet3D(AbstractUNet):
                                              conv_upscale=conv_upscale,
                                              upsample=upsample,
                                              dropout_prob=dropout_prob,
+                                             pool_kernel_size=2,
                                              is3d=True)
 
 
@@ -190,6 +192,7 @@ class ResidualUNetSE3D(AbstractUNet):
                                                conv_upscale=conv_upscale,
                                                upsample=upsample,
                                                dropout_prob=dropout_prob,
+                                               pool_kernel_size=2,
                                                is3d=True)
 
 
